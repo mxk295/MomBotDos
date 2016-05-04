@@ -1,5 +1,29 @@
 var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
+var cool_text = ['Hi', 
+'Hey', 
+'Homedog Im busy',
+'call you in a bit...',
+'Hey--',
+'YES MADAME?',
+'A plague on this weather!!!!',
+'Kind of want your chicken keema',
+'Yes',
+'Doing well. Will contact you later',
+'Let me be',
+'!HEY!',
+'!!!',
+'Beep Beep',
+'Taking a nap',
+'...stop',
+'...',
+'chatting with E. Wes',
+'burning some bridges... need both hands for matches',
+"Blergh",
+"Meh",
+"Useless",
+"Silence is a virtue",
+"What?"];
 
 var botID = process.env.BOT_ID;
 
