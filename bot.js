@@ -25,11 +25,18 @@ var cool_text = ['Hi',
 "Silence is a virtue",
 "What?"];
 
+var MAX_RESPONSE_TIME = 1000*60*5;
+var MIN_RESPONSE_TIME= 1000*60*1;
+
 var botID = process.env.BOT_ID;
+
+function randomIntInc (low, high) {
+    return Math.floor(Math.random() * (high - low + 1) + low);
+}
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy$/;
+      botRegex = /^(Hi|Hey) (Didi|Kutti|Malsi|Dede)$/i;
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
